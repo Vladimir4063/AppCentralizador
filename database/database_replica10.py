@@ -2,10 +2,7 @@ import psycopg2
 
 try:
     connection = psycopg2.connect(
-        host='10.0.10.70',
-        user='reporte_replic',
-        password='.112233.',
-        database='central2010'
+        
     )
     print("Conexion exitosa!")
 
