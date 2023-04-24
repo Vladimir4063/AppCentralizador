@@ -6,6 +6,9 @@ from urllib import request
 from flask import Flask, render_template, request, redirect, url_for
 from models.analyzer_models import string_to_integerList
 
+# from reporte.reporte import Reporte
+# import sys
+# import os
 
 app = Flask(__name__)
 
@@ -68,6 +71,13 @@ def analyzer():
     print(type(pasos_ocultos))
     print(pasos_ocultos)
     print(fecha_hora)
+
+    start = True
+    # if start:
+    #     baseDir = os.path.dirname(os.path.realpath(__file__))
+    #     Reporte(baseDir)
+    #     print("Finaliza la Ejecución")
+    #     sys.exit(0)
 
     return render_template('admin/analyzer.html')
 
